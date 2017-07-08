@@ -2,10 +2,11 @@
 spring:
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
-    url: jdbc:mysql://192.168.20.23:3306/mdp
+    url: jdbc:mysql://localhost:3306/dubbox_test
     username: root
-    password: houbanktest
-    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver   # mysql 5.x
+    #driver-class-name: com.mysql.cj.jdbc.Driver  mysql 6.x
     # 下面为连接池的补充设置，应用到上面所有数据源中
     # 初始化大小，最小，最大
     initialSize: 1
